@@ -6,9 +6,11 @@ $(function() {
         // 询问
         layer.confirm('是否确认退出?', {icon: 3, title:'提示'}, function(index){
             //do something
-            // 清除token，跳转页面，关闭询问框
+            // 清除token，
             localStorage.removeItem('token')
+            // 跳转页面，
             location.href="/login.html"
+            // 关闭询问框
             layer.close(index);
           });
         
